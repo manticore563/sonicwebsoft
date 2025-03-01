@@ -1,0 +1,102 @@
+.fav-menu {
+    position: relative;
+
+    .fav-btn {
+        color: var(--#{$prefix}primary) !important;
+        text-align: center;
+        cursor: pointer;
+        display: flex;
+        line-height: 34px;
+
+        // &:hover,
+        // &:focus {
+        //     background: var(--#{$prefix}primary);
+        //     color: var(--#{$prefix}white) !important;
+        // }
+
+        span {
+            padding-left: .5rem;
+            line-height: 34px;
+        }
+
+        i {
+            font-size: 16px;
+            line-height: 34px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+            height: auto;
+            display: flex;
+            line-height: 1;
+            background: transparent;
+            border: 0;
+            margin-left: 0;
+            padding: 8px 0;
+
+            &:visited,
+            &:hover,
+            &:focus,
+            &:active {
+                background: transparent !important;
+                color: var(--#{$prefix}primary) !important;
+            }
+        }
+    }
+
+    .menu-items {
+        list-style-type: none;
+
+        [theme-mode="dark"] & {
+            background-color: var(--#{$prefix}primary-dark);
+        }
+
+        .icons-container {
+            padding: 0;
+
+            .menu-link {
+                text-decoration: none;
+                // padding: 0 1rem;
+                display: flex;
+                align-items: center !important;
+
+
+                >span {
+                    margin-left: 15px;
+
+                    [theme-mode="dark"] & {
+                        color: var(--#{$prefix}dark-text-color);
+                    }
+                }
+
+                i {
+                    font-size: 24px;
+                }
+            }
+
+            // .bg-hover {
+            //     &:hover {
+            //         &:before {
+            //             content: "";
+            //             background-color: var(--#{$prefix}body-bg);
+            //             border-radius: 8px;
+            //             position: absolute;
+            //             left: 0;
+            //             top: 0;
+            //             width: 100%;
+            //             height: 100%;
+            //             transform: scale(1.1);
+            //             display: block;
+            //             z-index: -10;
+
+            //             [theme-mode="dark"] & {
+            //                 background-color: var(--#{$prefix}primary-dark);
+            //             }
+            //         }
+            //     }
+            // }
+        }
+    }
+
+
+}

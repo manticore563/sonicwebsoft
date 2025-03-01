@@ -1,0 +1,104 @@
+.hero-title {
+    position: relative;
+    padding: 15px 0;
+
+    p {
+        color: var(--#{$prefix}text-light);
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+
+    h1,
+    h2 {
+        padding-left: 10px;
+
+        [dir="rtl"] & {
+            padding-right: 10px;
+            padding-left: 0;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: relative;
+            background: var(--#{$prefix}primary);
+            height: 20px;
+            width: 4px;
+            left: -10px;
+
+            [dir="rtl"] & {
+                right: -10px;
+                left: auto;
+            }
+        }
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &.center {
+        text-align: center;
+
+        h1,
+        h2 {
+            &::after {
+                content: '';
+                left: 0;
+                right: 0;
+                margin: auto;
+                margin-top: 10px;
+                width: 35px !important;
+                height: 4px !important;
+            }
+        }
+    }
+
+    h1 {
+        &:after {
+            margin-top: -25px;
+        }
+    }
+
+    h2 {
+        &:after {
+            margin-top: -22px;
+        }
+    }
+
+    &.vertical {
+        float: left;
+        writing-mode: vertical-lr;
+        transition: all 0.2s ease;
+
+        h1,
+        .h1,
+        h2,
+        .h2 {
+            &:after {
+                height: 50px;
+                width: 2px;
+                margin-top: 0;
+                writing-mode: vertical-lr;
+                transition: all 0.2s ease;
+                left: -30px;
+            }
+        }
+    }
+
+    button {
+        margin-top: 15px;
+    }
+}
+
+.tool-favorite-btn {
+    position: absolute;
+    right: 15px;
+
+    [dir="rtl"] & {
+        right: auto;
+        left: 15px;
+    }
+}
