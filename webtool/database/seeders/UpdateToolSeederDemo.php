@@ -520,7 +520,7 @@ class UpdateToolSeederDemo extends Seeder
                         'class_name' => 'App\Tools\EnglishConverter',
                         'icon_type' => 'class',
                         'icon_class' => 'translate-english',
-                        'settings' => ['driver' => 'OpenAiRewriter', 'openai_apikey' => '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'],
+                        'settings' => ['driver' => 'OpenAiRewriter', 'openai_apikey' => 'YOUR_OPENAI_API_KEY'],
                         'properties' => ["properties" => ["wc-tool", "du-tool"], "auth" => ["wc-tool" => $wc_tool_value_auth, "du-tool" => $du_tool_value_auth], "guest" => ["wc-tool" => $wc_tool_value_guest, "du-tool" => $du_tool_value_guest]],
                         'en' => ['name' => 'English Converter', 'description' => 'Edit me from admin panel...', 'content' => 'Edit me from admin panel...']
                     ],
@@ -530,7 +530,7 @@ class UpdateToolSeederDemo extends Seeder
                         'class_name' => 'App\Tools\Paraphrased',
                         'icon_type' => 'class',
                         'icon_class' => 'paraphrased',
-                        'settings' => ['driver' => 'OpenAiRewriter', 'openai_apikey' => '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'],
+                        'settings' => ['driver' => 'OpenAiRewriter', 'openai_apikey' => 'YOUR_OPENAI_API_KEY'],
                         'properties' => ["properties" => ["wc-tool", "du-tool"], "auth" => ["wc-tool" => $wc_tool_value_auth, "du-tool" => $du_tool_value_auth], "guest" => ["wc-tool" => $wc_tool_value_guest, "du-tool" => $du_tool_value_guest]],
                         'en' => ['name' => 'Paraphrased', 'description' => 'Edit me from admin panel...', 'content' => 'Edit me from admin panel...']
                     ],
